@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-                                  
-mongoose.connect('mongodb://127.0.0.1:27017/nintendo-market-place', {
+   //nintendo-merket-place changed to --> games-market-place                               
+mongoose.connect('mongodb://127.0.0.1:27017/games-market-place', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
