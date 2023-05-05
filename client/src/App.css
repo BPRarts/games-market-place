@@ -2,10 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: purple;
+  background-color: black;
   color: aliceblue;
-  
-
 }
 .App {
   text-align: center;
@@ -16,17 +14,21 @@
   border-radius: 20px;
 }
 
+
+
+
+
+
+
 .platforms{
   display: flex;
   justify-content: space-between;
   padding: 50px;
  }
-
  .go{
   position: relative;
   bottom: 160px;
  
-  
  }
 
 .xbox-image{
@@ -45,3 +47,26 @@
 }
 
 
+
+
+
+.halo-add{
+  height: 350px;
+}
+.link-add{
+  height: 350px;
+}
+.kratos-add{
+  height: 350px;
+}
+
+
+
+.game-list{
+  border: solid black;
+  width: 400px;
+ 
+  margin: auto;
+  
+
+}

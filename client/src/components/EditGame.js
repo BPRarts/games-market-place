@@ -1,0 +1,95 @@
+import React, {useEffect, useState} from 'react';
+import axios from 'axios'
+import { useNavigate, useParams } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
+const EditGame = () => {
+    const {id} = useParams()
+    const navigate = useNavigate()
+    const [game, setGame] = useState({
+        gameTitle: '',
+        gamePrice: '',
+        gameDescription: ''
+
+
+    })
+    const [errors, setErrors] = useState({})
+    const changeHandler = (e) => {
+        if(e.target.name === 'explicit'){
+            setGame({...game, explicit: !game.explicit})
+        }else{
+            setGame({...game, [e.target.name]: e.target.value})
+        }
+    }
+
+    useEffect(() => {
+        axios.get(`http://localhost:8000/api/oneGame/${id}`)
+            .then((res) => {
+                console.log(res);
+                setGame(res.data)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    },[])
+
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+        axios.put(`http://localhost:8000/api/updateGame/${id}`, game)
+            .then((res) => {
+                console.log(res);
+                navigate('/')
+            })
+            .catch((err) => {
+                console.log(err);
+                setErrors(err.response.data.errors)
+            })
+    }
+
+
+
+    return (
+        <div>
+           <div className='homenav-2'>
+            <h2>Edit About: {game.gameTitle}</h2>
+    
+            </div>
+            <div>
+                <div className='edit'>
+            <form className='w-25' onSubmit={submitHandler}>
+                <label className='form-label'>Title:</label>
+                <input className='form-control' type="text" onChange={changeHandler} value={game.gameTitle} name='gameTitle'/>
+                {
+                    errors.gameTitle?
+                    <p className='text-danger'>{errors.gameTitle.message}</p>:
+                    null
+                }
+                <br></br>
+
+                <label className='form-label' >Price:</label>
+                <input className='form-control' type="text" onChange={changeHandler} value={game.gamePrice} name='gamePrice'/>
+                {
+                    errors.gamePrice?
+                    <p className='text-danger'>{errors.gamePrice.message}</p>:
+                    null
+                }
+                <br></br>
+                <label className='form-label'>Description:</label>
+                <input className='form-control' type="text" onChange={changeHandler} value={game.gameDescription} name='gameDescription'/>
+                {
+                    errors.gameDescription?
+                    <p className='text-danger'>{errors.gameDescription.message}</p>:
+                    null
+                }
+                
+                <br/>
+                <button className='editpet'>Edit</button>
+            </form>
+            </div>
+            </div>  
+        </div>
+    );
+}
+
+export default EditGame;
