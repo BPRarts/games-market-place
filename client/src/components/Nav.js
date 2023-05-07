@@ -4,7 +4,7 @@ const Nav = (props) => {
     return (
         <div class = 'nav'>
             <h1 className='title'>Games market Place</h1>   
-            <Link to = '/'>Home</Link>
+            <Link className ="home"to = '/'>Home</Link>
 
         
         </div>

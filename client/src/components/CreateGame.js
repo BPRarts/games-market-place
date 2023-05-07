@@ -6,7 +6,8 @@ const CreateGame = () => {
     const [game,setGame] = useState({
         gameTitle:'',
         gamePrice:'',
-        gameDescription:''
+        gameDescription:'',
+        gameType:''
     })
 
     const [errors, setErrors] = useState({})
@@ -66,10 +67,17 @@ const CreateGame = () => {
                         errors.gameDescription?
                         <p className='text-danger'>{errors.gameDescription.message}</p>:
                         null
-                
                     }
-                    
                     <br></br>
+
+                    <label>Type:</label>
+                    <select className='form-label' name = 'type' onChange={changeHandler} value={game.gameType}>
+                            <option value= 'Playstaion'>Playstaion</option>
+                            <option value= 'Xbox'>Xbox</option>
+                            <option value= 'Switch'>Switch</option>
+                    </select>
+                    <br></br>
+                    
                     <button className='addpet'>Add Game</button>
             </div>
             </form>

@@ -9,13 +9,13 @@ import {Link} from 'react-router-dom'
 
 const MainHome = () => {
     return (
-    <div>
-         <div>
+    <div className='container-1'>
+         <div className='intro'>
             <h1>BUY AND SELL</h1>
             <h3>YOUR NEXT GAME!</h3>
             <img class = "img1" src={img1} alt= ''/>
          </div>
-            <h2>Choose Your Platform</h2>
+            <h2 className='choose'>Choose Your Platform</h2>
 
             <div class = "platforms">
 

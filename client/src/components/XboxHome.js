@@ -23,14 +23,16 @@ const XboxHome = (props) => {
 
 
     return (
-        <div>
-            <div>
+        <div className='container-2'>
+            <div className='intro'>
             <h1>DISCOVER</h1>
             <h2>YOUR NEXT GAME</h2>
             <Link to ={'/createGame/form'}>Add Game</Link>
             <img class ="halo-add" src = {haloadd} alt =''/>
             </div>
+             
 
+            <h2 className='choose'>Choose Your Game</h2>
             <div>
             {
            allGames.map((game) => (

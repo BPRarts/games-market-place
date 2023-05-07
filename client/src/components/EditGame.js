@@ -82,9 +82,16 @@ const EditGame = () => {
                     <p className='text-danger'>{errors.gameDescription.message}</p>:
                     null
                 }
+                <br></br>
+                 <label>Type:</label>
+                    <select className='form-label' name = 'type' onChange={changeHandler} value={game.gameType}>
+                            <option value= 'Playstaion'>Playstaion</option>
+                            <option value= 'Xbox'>Xbox</option>
+                            <option value= 'Switch'>Switch</option>
+                    </select>
                 
                 <br/>
-                <button className='editpet'>Edit</button>
+                <button className='editpet'>Finish Edit</button>
             </form>
             </div>
             </div>  

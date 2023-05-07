@@ -21,7 +21,15 @@ const GameSchema = new mongoose.Schema(
             required:[true,'Game Description is required'],
             minLength:[3,'The Game Description must be 3 or more characters'],
             maxlenth:[50,'The Game Description is too long']
+        },
+
+        gameType:{
+            type: String,
+            required:[true,'Game Type is required'],
+            minLength:[3,'The Game Type must be 3 or more characters'],
+            maxlenth:[50,'The Game Type is too long']
         }
+
 
         
        

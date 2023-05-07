@@ -47,6 +47,7 @@ const OneGame = (props) => {
             <h2>{oneGame.gameTitle}</h2>
             <h2>{oneGame.gamePrice}</h2>
             <h2>{oneGame.gameDescription}</h2>
+            <h2>{oneGame.gameType}</h2>
             <button className='delete' onClick={() => deleteHandler(oneGame._id)}>BUY</button>
             
            
