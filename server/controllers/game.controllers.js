@@ -13,6 +13,8 @@ module.exports ={
     },
 
     createGame:(req,res) => {
+        console.log("IN CREATE GAME")
+        console.log(req.body)
         Game.create(req.body)
         .then((newGame) => {
             res.status(200).json(newGame)

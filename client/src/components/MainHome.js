@@ -11,27 +11,27 @@ const MainHome = () => {
     return (
     <div className='container-1'>
          <div className='intro'>
-            <h1>BUY AND SELL</h1>
-            <h3>YOUR NEXT GAME!</h3>
-            <img class = "img1" src={img1} alt= ''/>
+            <h1 className='title1'>BUY AND SELL</h1>
+            <h3 className='title2'>YOUR NEXT GAME!</h3>
+            <img className = "img1" src={img1} alt= ''/>
          </div>
             <h2 className='choose'>Choose Your Platform</h2>
 
-            <div class = "platforms">
+            <div className = "platforms">
 
                   <div>
-                    <Link class = "go" to = '/XboxHome'>Go!</Link>
-                    <img class = "xbox-image" src = {xboximage}  alt = ''/>
+                   <Link to='/XboxHome'>
+                   <img className='xbox-image' src={xboximage} alt='' /></Link>
                    </div>
 
                    <div>
-                    <Link class = "go" to = '/SwitchHome'>Go!</Link>
-                    <img class = "switch-image" src = {switchimage} alt = ''/>
+                   <Link to='/SwitchHome'>
+                   <img className='switch-image' src={switchimage} alt='' /></Link>
                   </div>
 
                   <div>
-                    <Link class = "go" to = '/PlaystationHome'>Go!</Link>
-                <img class = "ps-image" src = {psimage} alt = '' />
+                  <Link to='/PlaystationHome'>
+                    <img className='ps-image' src={psimage} alt='' /></Link>
                   </div>
             </div>
                 

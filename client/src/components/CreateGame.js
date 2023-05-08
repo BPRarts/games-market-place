@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import axios from 'axios'
 import {Link} from 'react-router-dom';
 
-const CreateGame = () => {
+const CreateGame = (props) => {
     const [game,setGame] = useState({
         gameTitle:'',
         gamePrice:'',
@@ -13,23 +13,18 @@ const CreateGame = () => {
     const [errors, setErrors] = useState({})
 
     const changeHandler = (e) => {
-        if(e.target.name ==='explicit'){
-            setGame({...game,explicit: !game.explicit})
-    
-        }else{
-            setGame({...game,[e.target.name]: e.target.value})
-        }
+        setGame({...game,[e.target.name]: e.target.value})
     
     }
 
     const submitHandler = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8000/api/newGame',game)
+        axios.post('http://localhost:8000/api/newGame', game)
              .then((res) => {
                 console.log(res);
              })
              .catch((err) =>{
-                console.log(err);
+                console.log("this is axios error",err);
                 setErrors(err.response.data.errors)
              })
     }
@@ -37,7 +32,7 @@ const CreateGame = () => {
     return (
         <div>
              <div className='homenav'>
-            <h2 className=''>Place a game to sell?</h2>
+            <h2 className='sell'>Place a game to sell?</h2>
            
         </div>
         <div className='form'> 
@@ -71,14 +66,14 @@ const CreateGame = () => {
                     <br></br>
 
                     <label>Type:</label>
-                    <select className='form-label' name = 'type' onChange={changeHandler} value={game.gameType}>
-                            <option value= 'Playstaion'>Playstaion</option>
+                    <select className='form-label' name = 'gameType' onChange={changeHandler} value={game.gameType}>
+                            <option value= 'Playstation'>Playstation</option>
                             <option value= 'Xbox'>Xbox</option>
                             <option value= 'Switch'>Switch</option>
                     </select>
                     <br></br>
                     
-                    <button className='addpet'>Add Game</button>
+                    <button className='addgame'>Add Game</button>
             </div>
             </form>
 

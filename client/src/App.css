@@ -11,14 +11,24 @@
   color: white;
   margin: 10px;
   font-size: 20px;
+
 }
+
+.title1{
+  font-size: 60px;
+}
+
+.title2{
+  font-size: 30px;
+}
+
 .container-1{
   background-image: url(../src/components/images/purple-back.webp);
   background-repeat:repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  bottom: 21px;
+  bottom: 40px;
 }
 .App {
   text-align: center;
@@ -30,7 +40,7 @@
 }
 
 .img1{
-  height: 400px;
+  height: 600px;
   border-radius: 20px;
   border: solid white;
 }
@@ -42,31 +52,26 @@
 .platforms{
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 80px;
   
- }
- .go{
-  position: relative;
-  bottom: 160px;
- 
- }
+}
 
 .xbox-image{
   border-radius: 20px;
-  height: 150px;
+  height: 200px;
   border: solid white;
-
+  
 }
 
 .switch-image{
   border-radius: 20px;
-  height: 150px;
+  height: 200px;
   border: solid white;
 }
 
 .ps-image{
   border-radius: 20px;
-  height: 150px;
+  height: 200px;
   border: solid white;
 }
 
@@ -82,12 +87,14 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  bottom: 21px;
+  bottom: 40px;
 }
 .halo-add{
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
   border: solid white;
+  
+  
 }
 
 
@@ -98,6 +105,8 @@
 /* switch homepage */
 .link-add{
   height: 350px;
+  border-radius: 20px;
+  border: solid white;
 }
 
 .container-3{
@@ -131,9 +140,27 @@
 
 
 .game-list{
-  border: solid black;
-  width: 400px;
+  border: solid white;
+  width: 300px;
   margin: auto;
-  background-color: white;
+  color: white;
+  background-color: rgb(74, 0, 67);
+  
+  
+
+}
+
+
+
+/* other */
+.links{
+  color: white;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
