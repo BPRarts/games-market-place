@@ -41,6 +41,10 @@ const XboxHome = (props) => {
             <div className='box'>
                 {xboxGames.map((game) => (
                    <div className='game-list' key={game._id}>
+
+                   
+
+
                         <h2>{game.gameTitle}</h2>
                         <h2>Price: {game.gamePrice}</h2> 
                
