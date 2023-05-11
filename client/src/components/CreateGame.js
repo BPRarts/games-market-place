@@ -42,9 +42,9 @@ const CreateGame = (props) => {
         
 
         <div className='form'> 
-             <div>
+            
             <h2 className='sell'>What are You Selling?!</h2>
-            </div>
+           
             <form onSubmit={submitHandler}>
 
                 <div className='input-container'>

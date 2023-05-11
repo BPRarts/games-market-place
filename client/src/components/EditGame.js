@@ -50,11 +50,11 @@ const EditGame = () => {
 
 
     return (
-        <div>
-           <div className='homenav-2'>
-            <h2>Edit About: {game.gameTitle}</h2>
+        <div className='creategame'>
+           <div className='form'>
+            <h2 className='edit-title'>Edit About: {game.gameTitle}</h2>
     
-            </div>
+            
             <div>
                 <div className='edit'>
             <form className='w-25' onSubmit={submitHandler}>
@@ -91,8 +91,9 @@ const EditGame = () => {
                     </select>
                 
                 <br/>
-                <button className='editpet'>Finish Edit</button>
+                <button className='addgame'>Finish Edit</button>
             </form>
+            </div>
             </div>
             </div>  
         </div>

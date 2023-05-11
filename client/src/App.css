@@ -16,6 +16,8 @@
 
 .title1{
   font-size: 60px;
+  margin: 0;
+
 }
 
 .title2{
@@ -27,8 +29,7 @@
   background-repeat:repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  bottom: 40px;
+  
 }
 .App {
   text-align: center;
@@ -47,12 +48,18 @@
 .choose{
   color: white;
   text-shadow: 2px 2px 5px black;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  
 }
 .platforms{
   display: flex;
   justify-content: space-between;
-  padding: 80px;
+  padding: 20px;
+  justify-content: center;
+  gap: 8em;
+  
   
 }
 
@@ -83,11 +90,11 @@
 /* xbox homepage */
 .container-2{
   background-image: url(../src/components/images/xbox-back.jpg);
+  
   background-repeat:repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  bottom: 40px;
+  
 }
 .halo-add{
   height: 400px;
@@ -104,7 +111,7 @@
 
 /* switch homepage */
 .link-add{
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
   border: solid white;
 }
@@ -114,8 +121,8 @@
   background-repeat:repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  bottom: 21px;
+  
+  
   
 }
 
@@ -126,13 +133,11 @@
   background-repeat:repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  bottom: 21px;
+ 
   
 }
 .kratos-add{
-  height: 350px;
-  height: 350px;
+  height: 400px;
   border-radius: 20px;
   border: solid white;
 }
@@ -141,13 +146,27 @@
 
 .game-list{
   border: solid white;
-  width: 300px;
+  border-radius: 20px;
+  width: 500px;
   margin: auto;
   color: white;
   background-color: rgb(74, 0, 67);
-  
-  
+}
 
+.godofwar{
+  padding: 10px;
+  height: 200px;
+  border-radius: 20px;
+ 
+}
+
+.gowdisplay{
+  border: solid white;
+  border-radius: 20px;
+  width: 500px;
+  margin: auto;
+  color: white;
+  background-color: rgb(74, 0, 67);
 }
 
 
@@ -166,6 +185,17 @@
 
 .sell{
   font-size: 60px;
+  color: white;
+}
+
+.edit-title{
+  font-size: 40px;
+  color: white;
+
+}
+
+
+.onegame{
   color: white;
 }
 .form{
@@ -231,5 +261,36 @@ label{
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 2em;
+  
+  
 }
 
+.text-danger{
+  color: red;
+}
+
+.delete{
+  background-color: red;
+  color: white;
+  margin: 20px;
+  font-size: 20px;
+  box-shadow: 5px 5px black;
+}
+
+.about{
+  font-size: 30px;
+}
+
+.addgamebtn1{
+ 
+  color: white;
+  font-size: 20px;
+   
+
+}
+
+
+  
+  
+  
+ 

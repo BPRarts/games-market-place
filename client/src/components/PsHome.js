@@ -2,6 +2,7 @@ import kratosadd from './images/kratosadd.png'
 import React, {useState,useEffect} from 'react';
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import godofwar from './images/godofwar.jpg'
 
 
 const PsHome = (props) => {
@@ -32,16 +33,24 @@ const PsHome = (props) => {
     return (
         <div className='container-4'>
            <div className='intro'>
-            <h1>DISCOVER</h1>
+            <h1 className='title1'>DISCOVER</h1>
             <h2>YOUR NEXT GAME</h2>
-            <Link to ={'/createGame/form'}>Add Game</Link>
             <img className = "kratos-add" src ={kratosadd} alt =''/>
             </div>
+
+            <Link className = 'addgamebtn1' to ={'/createGame/form'}>Add Game</Link>
             <h2 className='choose'>Choose Your Game</h2>
 
+           <div>
+           <div className='gowdisplay'>
+           <img className = "godofwar" src={godofwar} alt= ''/>
+           <p>God Of War</p>
+           <p>Price:$60</p>
+           </div>
+           </div>
 
 
-            <div>
+            <div className='box'>
                 
             {psGames.map((game) => (
             <div className='game-list' key={game._id}>

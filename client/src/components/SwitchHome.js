@@ -32,12 +32,12 @@ const SwitchHome = (props) => {
     return (
     <div className='container-3'>
         <div className='intro'>
-            <h1 className='Discover'>DISCOVER</h1>
+            <h1 className='title1'>DISCOVER</h1>
             <h2>YOUR NEXT GAME</h2>
-            <Link to ={'/createGame/form'}>Add Game</Link>
             <img className = "link-add" src ={linkadd} alt = ''/>
         </div>
-
+        
+        <Link className='addgamebtn1' to ={'/createGame/form'}>Add Game</Link>
         <h2 className='choose'>Choose Your Game</h2>
 
 
