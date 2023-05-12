@@ -1,7 +1,11 @@
 import haloadd from './images/haloadd.png';
 import React, {useState,useEffect} from 'react';
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import gears5 from './images/gears5.jpg'
+import halo5 from './images/halo5.webp'
+import forza5 from './images/forza5.webp'
+
 
 
 const XboxHome = (props) => {
@@ -37,6 +41,40 @@ const XboxHome = (props) => {
             </div>
                  <Link className='addgamebtn1' to ={'/createGame/form'}>Add Game</Link>
                 <h2 className='choose'>Choose Your Game</h2>
+
+            <div className='displays'>
+
+                  <div className='gamesdisplay'>
+                  <img className = "gears5" src={gears5} alt= ''/>
+                  <p className='displaytitle'>God Of War</p>
+                  <p className='displaytitle'>Price:$60</p>
+                 </div>
+
+                 <div className='gamesdisplay'>
+                 <img className='halo5' src = {halo5} alt />
+                 <p className='displaytitle'>Resident Evil 4</p>
+                 <p className='displaytitle'>Price:60</p>
+                 </div>
+
+                <div className='gamesdisplay'>
+                <img className = "forza5" src={forza5} alt= ''/>
+                <p className='displaytitle'>Devil May Cry 5</p>
+                 <p className='displaytitle'>Price:$60</p>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
 
             <div className='box'>
                 {xboxGames.map((game) => (

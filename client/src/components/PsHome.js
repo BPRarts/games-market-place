@@ -3,6 +3,8 @@ import React, {useState,useEffect} from 'react';
 import axios from 'axios'
 import {Link} from 'react-router-dom'
 import godofwar from './images/godofwar.jpg'
+import re4 from './images/re4.webp'
+import dmc from './images/dmc.jpg'
 
 
 const PsHome = (props) => {
@@ -41,13 +43,32 @@ const PsHome = (props) => {
             <Link className = 'addgamebtn1' to ={'/createGame/form'}>Add Game</Link>
             <h2 className='choose'>Choose Your Game</h2>
 
-           <div>
-           <div className='gowdisplay'>
-           <img className = "godofwar" src={godofwar} alt= ''/>
-           <p>God Of War</p>
-           <p>Price:$60</p>
+           <div className='displays'>
+
+               <div className='gamesdisplay'>
+               <img className = "godofwar" src={godofwar} alt= ''/>
+               <p className='displaytitle'>God Of War</p>
+               <p className='displaytitle'>Price:$60</p>
+               </div>
+
+              <div className='gamesdisplay'>
+              <img className='re4' src = {re4} alt />
+              <p className='displaytitle'>Resident Evil 4</p>
+              <p className='displaytitle'>Price:60</p>
+              </div>
+
+              <div className='gamesdisplay'>
+              <img className = "dmc" src={dmc} alt= ''/>
+               <p className='displaytitle'>Devil May Cry 5</p>
+               <p className='displaytitle'>Price:$60</p>
+              </div>
+
+
            </div>
-           </div>
+
+
+
+
 
 
             <div className='box'>

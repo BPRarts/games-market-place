@@ -80,11 +80,12 @@ const CreateGame = (props) => {
                             <option value= 'Playstation'>Playstation</option>
                             <option value= 'Xbox'>Xbox</option>
                             <option value= 'Switch'>Switch</option>
+
                     </select>
                     <br></br>
                     </div>
                     
-                    <button className='addgame'>Add Game</button>
+                    <button className='addgame' >Add Game</button>
                 </div>
             </form>
 
