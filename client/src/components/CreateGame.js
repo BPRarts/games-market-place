@@ -9,20 +9,18 @@ const CreateGame = (props) => {
         gamePrice:'',
         gameDescription:'',
         gameType:''
-       
-        
     })
 
 
 
     const [errors, setErrors] = useState({})
 
+
     const changeHandler = (e) => {
         setGame({...game,[e.target.name]: e.target.value})
+    }
 
     
-    
-    }
 
     const submitHandler = (e) => {
         e.preventDefault();

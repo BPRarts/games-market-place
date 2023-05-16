@@ -10,17 +10,18 @@ const EditGame = () => {
         gameTitle: '',
         gamePrice: '',
         gameDescription: ''
+})
 
 
-    })
+
     const [errors, setErrors] = useState({})
+
+
     const changeHandler = (e) => {
-        if(e.target.name === 'explicit'){
-            setGame({...game, explicit: !game.explicit})
-        }else{
-            setGame({...game, [e.target.name]: e.target.value})
-        }
-    }
+        setGame({...game, [e.target.name]: e.target.value})
+      }
+
+
 
     useEffect(() => {
         axios.get(`http://localhost:8000/api/oneGame/${id}`)
@@ -32,6 +33,8 @@ const EditGame = () => {
                 console.log(err);
             })
     },[])
+
+
 
 
     const submitHandler = (e) => {
@@ -57,7 +60,7 @@ const EditGame = () => {
             
             <div>
                 <div className='edit'>
-            <form className='w-25' onSubmit={submitHandler}>
+            <form className='' onSubmit={submitHandler}>
                 <label className='form-label'>Title:</label>
                 <input className='form-control' type="text" onChange={changeHandler} value={game.gameTitle} name='gameTitle'/>
                 {

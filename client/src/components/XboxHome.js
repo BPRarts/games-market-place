@@ -46,19 +46,19 @@ const XboxHome = (props) => {
 
                   <div className='gamesdisplay'>
                   <img className = "gears5" src={gears5} alt= ''/>
-                  <p className='displaytitle'>God Of War</p>
+                  <p className='displaytitle'>Gears 5</p>
                   <p className='displaytitle'>Price:$60</p>
                  </div>
 
                  <div className='gamesdisplay'>
-                 <img className='halo5' src = {halo5} alt />
-                 <p className='displaytitle'>Resident Evil 4</p>
+                 <img className='halo5' src = {halo5} alt ='' />
+                 <p className='displaytitle'>Halo 5</p>
                  <p className='displaytitle'>Price:60</p>
                  </div>
 
                 <div className='gamesdisplay'>
                 <img className = "forza5" src={forza5} alt= ''/>
-                <p className='displaytitle'>Devil May Cry 5</p>
+                <p className='displaytitle'>Forza Horizon 5</p>
                  <p className='displaytitle'>Price:$60</p>
                 </div>
 

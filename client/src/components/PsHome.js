@@ -52,7 +52,7 @@ const PsHome = (props) => {
                </div>
 
               <div className='gamesdisplay'>
-              <img className='re4' src = {re4} alt />
+              <img className='re4' src = {re4} alt='' />
               <p className='displaytitle'>Resident Evil 4</p>
               <p className='displaytitle'>Price:60</p>
               </div>
@@ -78,9 +78,9 @@ const PsHome = (props) => {
                 <h2>{game.gameTitle}</h2>
                 <h2>Price: {game.gamePrice}</h2>
            
-               <Link to ={`/oneGame/${game._id}`}>Details</Link>
+               <Link className='links' to ={`/oneGame/${game._id}`}>Details</Link>
                <br></br>
-               <Link to ={`/updateGame/${game._id}`}>Edit</Link>
+               <Link className ='links'to ={`/updateGame/${game._id}`}>Edit</Link>
 
             </div>
         ))
