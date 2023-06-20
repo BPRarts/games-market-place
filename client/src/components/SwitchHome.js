@@ -49,7 +49,7 @@ const SwitchHome = (props) => {
 
         <div className='displays'>
 
-             <div className='gamesdisplay'>
+             {/* <div className='gamesdisplay'>
              <img className = "mariobros" src={mariobros} alt= ''/>
              <p className='displaytitle'>Super Mario Bros Deluxe</p>
              <p className='displaytitle'>Price: $60</p>
@@ -65,7 +65,7 @@ const SwitchHome = (props) => {
             <img className = "marioady" src={marioady} alt= ''/>
             <p className='displaytitle'>Super Mario Adyssey</p>
             <p className='displaytitle'>Price: $60</p>
-           </div>
+           </div> */}
 
 
          </div>

@@ -45,7 +45,7 @@ const PsHome = (props) => {
 
            <div className='displays'>
 
-               <div className='gamesdisplay'>
+               {/* <div className='gamesdisplay'>
                <img className = "godofwar" src={godofwar} alt= ''/>
                <p className='displaytitle'>God Of War</p>
                <p className='displaytitle'>Price:$60</p>
@@ -61,7 +61,7 @@ const PsHome = (props) => {
               <img className = "dmc" src={dmc} alt= ''/>
                <p className='displaytitle'>Devil May Cry 5</p>
                <p className='displaytitle'>Price:$60</p>
-              </div>
+              </div> */}
 
 
            </div>

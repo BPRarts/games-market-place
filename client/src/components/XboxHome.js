@@ -42,9 +42,11 @@ const XboxHome = (props) => {
                  <Link className='addgamebtn1' to ={'/createGame/form'}>Add Game</Link>
                 <h2 className='choose'>Choose Your Game</h2>
 
+                
+
             <div className='displays'>
 
-                  <div className='gamesdisplay'>
+                  {/* <div className='gamesdisplay'>
                   <img className = "gears5" src={gears5} alt= ''/>
                   <p className='displaytitle'>Gears 5</p>
                   <p className='displaytitle'>Price:$60</p>
@@ -60,7 +62,7 @@ const XboxHome = (props) => {
                 <img className = "forza5" src={forza5} alt= ''/>
                 <p className='displaytitle'>Forza Horizon 5</p>
                  <p className='displaytitle'>Price:$60</p>
-                </div>
+                </div> */}
 
 
             </div>

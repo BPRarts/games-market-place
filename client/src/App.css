@@ -201,6 +201,15 @@
   border-radius: 20px;
   border: solid white;
 }
+@media (max-width: 768px) {
+  .halo-add {
+    height: 150px;
+    width: auto;
+   
+    
+  }
+  }
+
 
 .gears5{
   padding: 10px;
@@ -233,6 +242,14 @@
   border-radius: 20px;
   border: solid white;
 }
+@media (max-width: 768px) {
+  .link-add {
+    height: 150px;
+    width: auto;
+   
+    
+  }
+  }
 
 .container-3{
   background-image: url(../src/components/images/switch-back.webp);
@@ -279,6 +296,14 @@
   border: solid white;
 }
 
+@media (max-width: 768px) {
+  .kratos-add {
+    height: 150px;
+    width: auto;
+   
+    
+  }
+  }
 
 
 .game-list{
@@ -290,6 +315,16 @@
   background-color: rgb(74, 0, 67);
   
 }
+
+@media (max-width: 768px) {
+  .game-list {
+    height: 200px;
+    width: 300px;
+   
+    
+  }
+  }
+
 
 .displays{
  display: flex;
