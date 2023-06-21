@@ -88,7 +88,7 @@ const XboxHome = (props) => {
                         <h2>{game.gameTitle}</h2>
                         <h2>Price: {game.gamePrice}</h2> 
                
-    
+     
                         <Link className='links' to ={`/oneGame/${game._id}`}>Details</Link>
                         <br></br>
                         <Link className='links' to ={`/updateGame/${game._id}`}>Edit</Link>
